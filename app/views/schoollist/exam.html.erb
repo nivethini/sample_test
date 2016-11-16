@@ -1,0 +1,17 @@
+<table>
+<tr>
+<th>Status</th>
+<th>Student Name</th>
+<th>Student Mark</th>
+<th>Exam Name</th>
+
+</tr>
+<% @result.each do |res| %>
+<tr>
+	<td><%= res.status%></td>
+	<td><%= res.student.first_name%></td>
+	<td><%= res.mark.student_mark%></td>
+	<td><%= res.exam.name%></td>
+</tr>
+<%end%>
+	</table>

@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @api_v1_user_device_info.user %>
+</p>
+
+<p>
+  <strong>Os:</strong>
+  <%= @api_v1_user_device_info.os %>
+</p>
+
+<p>
+  <strong>Device type:</strong>
+  <%= @api_v1_user_device_info.device_type %>
+</p>
+
+<p>
+  <strong>Device model:</strong>
+  <%= @api_v1_user_device_info.device_model %>
+</p>
+
+<p>
+  <strong>System version:</strong>
+  <%= @api_v1_user_device_info.system_version %>
+</p>
+
+<p>
+  <strong>App version:</strong>
+  <%= @api_v1_user_device_info.app_version %>
+</p>
+
+<p>
+  <strong>Device locale:</strong>
+  <%= @api_v1_user_device_info.device_locale %>
+</p>
+
+<p>
+  <strong>Bundle device:</strong>
+  <%= @api_v1_user_device_info.bundle_device %>
+</p>
+
+<%= link_to 'Edit', edit_api_v1_user_device_info_path(@api_v1_user_device_info) %> |
+<%= link_to 'Back', api_v1_user_device_infos_path %>

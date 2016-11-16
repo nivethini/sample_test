@@ -1,0 +1,12 @@
+<table>
+<tr>
+<th>Section</th>
+
+</tr>
+<% @section.each do |sec|%>
+<tr>
+	<td><%= sec.category%></td>
+	<td><%= link_to "Show Section", show_section_path %>
+</tr>
+<%end%>
+</table>

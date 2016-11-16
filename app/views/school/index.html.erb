@@ -1,0 +1,17 @@
+<table>
+	<tr>
+		<th>SchoolName</th>
+		<th>Address</th>
+	</tr>
+
+<% @school.each do |school| %>
+	<tr>
+		<td><%= school.name%></td>
+		<td><%= school.address%></td>
+		<td><%= link_to "ShowSchool", show_path(school) %></td>
+		<td><%= link_to "NewSchool", new_path %></td>
+		<td><%= link_to "Edit", edit_path(school)%> </td>
+		<td><%= link_to "Delete", delete_path(school)%> </td>
+			<%end%>
+	</tr>
+</table>

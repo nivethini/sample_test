@@ -1,0 +1,12 @@
+<table>
+<tr>
+<th>Student Name</th>
+<th>Status</th>
+</tr>
+<% @student_attendance.each do |attendance|%>
+<tr>
+<td>	<%= attendance.student.first_name %></td>
+	<td><%= attendance.is_active %></td>
+	</tr>
+	<% end %>
+	</table>

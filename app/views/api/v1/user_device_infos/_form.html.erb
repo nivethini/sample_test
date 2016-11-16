@@ -1,0 +1,57 @@
+<%= form_for(api_v1_user_device_info) do |f| %>
+  <% if api_v1_user_device_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(api_v1_user_device_info.errors.count, "error") %> prohibited this api_v1_user_device_info from being saved:</h2>
+
+      <ul>
+      <% api_v1_user_device_info.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_id %>
+    <%= f.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :os %>
+    <%= f.text_field :os %>
+  </div>
+
+  <div class="field">
+    <%= f.label :device_type %>
+    <%= f.text_field :device_type %>
+  </div>
+
+  <div class="field">
+    <%= f.label :device_model %>
+    <%= f.text_field :device_model %>
+  </div>
+
+  <div class="field">
+    <%= f.label :system_version %>
+    <%= f.text_field :system_version %>
+  </div>
+
+  <div class="field">
+    <%= f.label :app_version %>
+    <%= f.text_field :app_version %>
+  </div>
+
+  <div class="field">
+    <%= f.label :device_locale %>
+    <%= f.text_field :device_locale %>
+  </div>
+
+  <div class="field">
+    <%= f.label :bundle_device %>
+    <%= f.text_field :bundle_device %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

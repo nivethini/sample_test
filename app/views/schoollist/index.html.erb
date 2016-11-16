@@ -1,0 +1,18 @@
+<table>
+<tr>
+<th>School Name</th>
+<th>School Address</th>
+
+</tr>
+<% @school.each do |school| %>
+<tr>
+	<td><%= school.name %></td>
+	<td><%= school.address %></td>
+
+<td><%= link_to "Show", school_path(school) %></td>
+
+
+<% end %>
+</tr>
+</table>
+	

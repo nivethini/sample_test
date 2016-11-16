@@ -1,0 +1,5 @@
+# Logfile created on 2016-10-15 17:55:11 +0530 by logger.rb/54362
+2016-10-15T12:25:13.084Z 22600 TID-gsnx8bj0w INFO: Booting Sidekiq 4.2.2 with redis options {:url=>"redis://localhost:6379/5", :namespace=>"activejob-sample"}
+2016-10-15T12:25:13.555Z 22600 TID-gsnx8bj0w INFO: Running in ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-linux]
+2016-10-15T12:25:13.555Z 22600 TID-gsnx8bj0w INFO: See LICENSE and the LGPL-3.0 for licensing details.
+2016-10-15T12:25:13.555Z 22600 TID-gsnx8bj0w INFO: Upgrade to Sidekiq Pro for more features and support: http://sidekiq.org

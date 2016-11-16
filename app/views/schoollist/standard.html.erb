@@ -1,0 +1,17 @@
+<table>
+<tr>
+
+<th>Standard</th>
+<th>SchoolName</th>
+
+</tr>
+<% @standard.each do |std|%>
+<tr>
+
+	<td><%= std.category %></td>
+	<td><%= std.school.name %></td>
+   
+	</tr>
+	<%end%>
+	</table>
+	<%= link_to "Show Standard",show_standard_path%>

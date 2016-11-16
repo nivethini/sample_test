@@ -1,0 +1,27 @@
+<table>
+<tr>
+<th>FirstName</th>
+<th>LastName</th>
+<th>Address</th>
+<th>Section</th>
+
+</tr>
+<% @student.each do |stud| %>
+<tr>
+
+<td><%= stud.first_name %></td>
+<td><%= stud.last_name %></td>
+<td><%= stud.address%></td>
+<td><%= stud.section.category %></td>
+<td><%= link_to 'Show',show_path(stud)%></td>
+<td><%= link_to 'New Student', new_student_path(stud) %></td>
+<td><%= link_to 'Edit', edit_student_path(stud) %></td>
+<td><%= link_to 'Destroy', destroy_student_path(stud) %></td>
+
+</tr>
+
+<%end%>
+
+
+
+</table>

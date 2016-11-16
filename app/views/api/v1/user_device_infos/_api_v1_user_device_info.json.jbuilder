@@ -1,0 +1,2 @@
+json.extract! api_v1_user_device_info, :id, :user_id, :os, :device_type, :device_model, :system_version, :app_version, :device_locale, :bundle_device, :created_at, :updated_at
+json.url api_v1_user_device_info_url(api_v1_user_device_info, format: :json)

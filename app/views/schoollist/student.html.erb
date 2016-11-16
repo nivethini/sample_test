@@ -1,0 +1,17 @@
+<table>
+<tr>
+<th>FirstName</th>
+<th>LastName</th>
+<th>Section</th>
+
+</tr>
+<% @student.each do |stud|%>
+	<tr>
+		<td><%= stud.first_name%></td>
+		<td><%= stud.last_name%></td>
+		<td><%= stud.section.category%></td>
+
+	</tr>
+	<%end%>
+	</table>
+<%= link_to "Show Students", show_student_path%>

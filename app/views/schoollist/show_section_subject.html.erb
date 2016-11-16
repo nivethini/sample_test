@@ -1,0 +1,17 @@
+<table>
+<tr>
+<th>Sub Name</th>
+<th>Student Name</th>
+<th>Teacher Name</th>
+<th>Section</th>
+</tr>
+<% @subject.each do |sub| %>
+<tr>
+<td><%= sub.name %></td>
+<td><%= sub.student.first_name %></td>
+<td><%= sub.teacher.name %></td>
+<td><%= sub.section.category%></td>
+</tr>
+<%= link_to "show results", result_path(sub)%>
+<% end %>
+</table>

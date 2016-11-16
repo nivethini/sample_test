@@ -1,0 +1,14 @@
+<table>
+<tr>
+<th>FirstName</th>
+<th>LastName</th>
+<th>Section</th>
+</tr>
+	<tr>
+		<td><%= @student.first_name%></td>
+		<td><%= @student.last_name%></td>
+		<td><%= @student.section.category%></td>
+		<td><%= link_to "Exam Mark", exam_path%></td>
+	</tr>
+	
+	</table>
